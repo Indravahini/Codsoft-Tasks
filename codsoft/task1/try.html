@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        
+     #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        z-index: -1; 
+    }
+
+    .content {
+        position: relative;
+        z-index: 1; 
+        padding: 20px; 
+    }
+
+    body {
+        margin: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f5f0f0;
+    }
+    .container {
+        color:white;
+        padding: 40px; 
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    }
+
+    h1 {
+        font-size: 36px; 
+        line-height: 1.5; 
+    }
+
+    header {
+    background-color: rgb(12, 9, 9);
+    text-align: right;
+}
+
+    header a {
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    header a:hover {
+        color: #ff9900;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color:#fff;
+        font-size: 24px;
+    }
+    .whatido{
+        margin-left: 150px;
+    }
+    #skills-section {
+        position: relative; 
+        top: 150px;
+    }
+    #skills-section h2 {
+    margin-left: 0; 
+}
+.skills-image {
+    max-width: 70%;
+    height: auto;
+    margin-top: -200px; 
+    margin-left: 350px;
+}
+#achievements-section {
+        position: relative; 
+        top: 150px;
+    }
+
+    .achievements-section {
+        margin-top: 50px;
+    }
+    .club {
+                margin-left: 200px;
+            }
+
+    .certificates-section {
+        margin-top: 200px;
+    }
+
+    .certificate-link {
+        display: block;
+        margin-bottom: 10px;
+        color: #ebf0f5;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+
+    }
+
+    .certificate-link:hover {
+        color:orange;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" onclick="scrollToSection('about-section')">About</a>
+        <a href="#" onclick="scrollToSection('skills-section')">Skills</a>
+        <a href="#" onclick="scrollToSection('achievements-section')">Achievements</a>
+        <a href="#" onclick="scrollToSection('resume-section')">Resume</a>
+        <a href="#" onclick="scrollToSection('projects-section')">Projects</a>
+        <a href="#" onclick="scrollToSection('contact-section')">Contact</a>
+    </header>
+    <video id="video-background" autoplay muted loop>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="row" id="about-section">
+            <div class="col-xs-12 col-sm-6">
+                <h1>Hii! I am Indravahini</h1>
+                <p style="font-family: Trebuchet MS; font-size: 20px;">
+                    Highly motivated and adaptable individual with a passion for web design and full-stack development,
+                    eager to explore the exciting world of blockchain technology. Possessing strong analytical and
+                    problem-solving skills, combined with a fast learning ability and a constant drive for knowledge.
+                    Currently acquiring full-stack development expertise, particularly focusing on backend technologies,
+                    and excited to contribute to a dynamic environment where I can leverage my skills and continuously
+                    learn.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="whatido">
+                    <h3 style="font-style: italic; font-weight: bold; margin-top: 50px;">What I do</h3>
+                    <p style="font-family: Trebuchet MS; font-size: 20px;">
+                        Currently enrolled in the 2nd year of BE (Bachelor of Engineering) in Computer Science Engineering
+                        at Sri Sairam Institute of Technology, West Tambaram, Chennai. Possessing a strong academic
+                        background, evidenced by achieving an impressive 90% in the 12th grade CBSE examinations from DAV
+                        School, Aadambakkam.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="skills-section">
+            <h2>Skills Section</h2>
+            <h3 style="font-weight:bold">Technical Skills</h3>
+
+            <div class="col-xs-12 col-sm-6">
+                <h4 style="margin-left: 20px;">Programming Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Basics of Javascript and PHP</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="content">
+                    <h3 style="margin-left:200px;margin-top:-50px;font-weight:bold;">Clubs and Cells</h3>
+                    <ul class="club">
+                        <li>Student Ambassador of UBA(Unnat Bharat Abhiyan)</li>
+                        <li>IEEE Member <p>Co-lead of Forby Series</p></li>
+                        <li>Cyber Club</li>
+                        <li>NSS(National Service Scheme)</li>
+                        <li>Code Club</li>
+                        <li>SBM(Swatchh Bharat Mission) volunteer</li>
+                        <li>Fine Arts club</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <img src="skills.png" alt="Skills Image" class="skills-image">
+            </div>
+        </div>
+        <div class="row achievements-section" id="achievements-section">
+            <div class="col-xs-12 col-sm-6">
+                <h2>Achievements</h2>
+                <p style="font-size:18px;">As a valuable member of my team, I have contributed to achieving results in ideathons and hackathons. To specify, we made it to the finals of the Ideathon event at our college, we were selected to participate in the esteemed Smart India Hackathon (SIH) after winning our college's internal hackathon, and we managed to secure a top 5 ranking in the Idea War event conducted by IEEE in our college.</p>
+            </div>
+        </div>
+
+        <div class="row certificates-section" id="certificates-section">
+            <div class="col-xs-12 col-sm-6">
+                <h3>Certificates</h3>
+                <a href="Full Stack Crash Course.pdf" class="certificate-link" target="_blank">Full Stack Crash Course</a>
+                <a href="python flask.pdf" class="certificate-link" target="_blank">Python Web Flask</a>
+                <a href="Forby series(Block Chain).pdf" class="certificate-link" target="_blank">What is Blockchain</a>
+                <a href="Digital Marketing course.pdf" class="certificate-link" target="_blank">Digital Marketing</a>
+                <a href="Introduction to RPA and Automation.pdf" class="certificate-link" target="_blank">Introduction to RPA and Automation</a>
+            </div>
+        </div>
+        <div class="row" id="projects-section">
+            <h2>Projects</h2>
+        <div class="col-xs-12 col-sm-6">
+        </br>
+            <p>Chatbots for train details: Developing Websites that can provide train
+                schedule information in multiple languages. This technology could be helpful for
+                tourists and other travelers who are unfamiliar with the local language.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <p>Blockchain: We are exploring the use of blockchain technology for payments.</p>
+        </br>
+            <p>Image Processing: Enhancing and restoring underwater photos while minimizing impairments caused by challenging underwater conditions.</p>
+        </div>
+    </div>
+
+        <div class="row" id="resume-section">
+            <p style="margin-top: -220px;">Click here to download my resume</p>
+            <a href="CV resume.pdf" class="certificate-link" target="_blank" style="display: inline-block; margin-top: 10px;">
+                <button type="button" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    Resume
+                </button>
+            </a>
+        </div>
+        
+        <div class="row" id="contact-section">
+            <h2>Social Media & Contact</h2>
+        
+            <div class="col-xs-12 col-sm-6">
+                <h3 style="font-weight:bold">Connect with Me</h3>
+                <a href="https://www.linkedin.com/in/indravahini-b-s" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" width="50" height="50">
+                </a>
+                <a href="https://www.instagram.com/vahini_1274" target="_blank">
+                    <img src="instagram.jpg" alt="Instagram" width="50" height="50">
+                </a>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6">
+                <h3 style="font-weight:bold">Contact Information</h3>
+                <div style="display: flex; align-items: center;">
+                    <p>Contact No: 7200020468</p>
+                    <a href="mailto:sit22cs086@sairamtap.edu.in">
+                        <img src="mail.png" alt="Email" width="50" height="50">
+                    </a>
+                </div>
+            </div>
+        </br>
+            <footer>
+            <div class="container text-center">
+                <p>&copy; 2023 Your Name. All rights reserved.</p>
+            </div>
+            </footer>
+
+        </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            $('html, body').animate({
+                scrollTop: $("#" + sectionId).offset().top
+            }, 800);
+        }
+    </script>
+</body>
+</html>
